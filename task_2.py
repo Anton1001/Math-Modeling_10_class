@@ -1,10 +1,12 @@
-import math
-g=10
-h=100
-a=math.pi/3
-b=math.radians(30)
-v=(g*h*(1/math.tan(b))**2)/(2*math.cos(a)**2)*(1-(1/math.tan(b))*(1/math.tan(a)))
-print(v)
+def prod(A):
+   
+    s = 1
+    for i in range(0, len(A), 1):
+        s = s*A[i]
+        print(s)
+    print('--------')
+    return s
 
+N = [1, 3, 5]
 
-
+print(prod(N))
